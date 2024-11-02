@@ -5,7 +5,7 @@ const getTags = async (id?: number): Promise<string[]> => {
   const queries = [];
   queries.push({ demo: true });
 
-  if (id) {
+  if (id && id !== 2) {
     queries.push({
       id: {
         equals: id,
